@@ -1,0 +1,35 @@
+.hero-section {
+  @apply relative h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 overflow-hidden;
+}
+
+.hero-background {
+  @apply absolute inset-0 z-0;
+}
+
+.hero-background-image {
+  @apply absolute inset-0 bg-[url('https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-30;
+}
+
+.hero-gradient {
+  @apply absolute inset-0 bg-gradient-to-t from-black to-transparent;
+}
+
+.hero-content {
+  @apply relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
+}
+
+.hero-title {
+  @apply text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight opacity-0 animate-[fadeIn_1s_ease-in_0.5s_forwards];
+}
+
+.hero-subtitle {
+  @apply mt-6 max-w-lg mx-auto text-xl sm:text-2xl text-gray-300 opacity-0 animate-[fadeIn_1s_ease-in_0.5s_forwards];
+}
+
+.hero-button {
+  @apply inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-black bg-purple-500 hover:bg-purple-600 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500;
+}
+
+.scroll-indicator {
+  @apply absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white;
+}

@@ -1,0 +1,67 @@
+.music-player {
+  @apply fixed bottom-0 left-0 right-0 bg-gray-900/90 backdrop-blur-lg border-t border-gray-800 p-4 z-40;
+}
+
+.player-container {
+  @apply max-w-7xl mx-auto;
+}
+
+.player-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4 items-center;
+}
+
+.track-info {
+  @apply flex items-center space-x-4;
+}
+
+.track-image {
+  @apply w-12 h-12 object-cover rounded-md;
+}
+
+.track-details {
+  @apply font-medium text-white truncate;
+}
+
+.track-artist {
+  @apply text-sm text-gray-400;
+}
+
+.player-controls {
+  @apply flex flex-col items-center;
+}
+
+.control-buttons {
+  @apply flex items-center space-x-4;
+}
+
+.control-button {
+  @apply p-2 text-gray-400 hover:text-white transition-colors;
+}
+
+.play-button {
+  @apply p-3 bg-purple-500 hover:bg-purple-600 rounded-full text-black transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+.progress-container {
+  @apply w-full flex items-center space-x-2 mt-2;
+}
+
+.progress-time {
+  @apply text-xs text-gray-400 w-10;
+}
+
+.progress-bar {
+  @apply w-full h-1 bg-gray-700 rounded-full appearance-none cursor-pointer focus:outline-none [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-purple-500;
+}
+
+.volume-controls {
+  @apply flex items-center justify-end space-x-2;
+}
+
+.volume-button {
+  @apply p-2 text-gray-400 hover:text-white transition-colors;
+}
+
+.volume-slider {
+  @apply w-24 h-1 bg-gray-700 rounded-full appearance-none cursor-pointer focus:outline-none [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-purple-500;
+}
