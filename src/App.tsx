@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { tracks } from './data/tracks';
 import { artists } from './data/artists';
 import Navbar from './components/NavBar';
